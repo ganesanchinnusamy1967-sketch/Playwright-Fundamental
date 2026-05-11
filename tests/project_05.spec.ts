@@ -22,5 +22,5 @@ test('verify the tta test' ,async({page})=>{
     await page.getByText("Dashboard").click();
     await expect(page.locator(".mt-2.text-3xl.font-bold")).toBeVisible();
     await expect(page.locator(".mt-2.text-3xl.font-bold")).toHaveText("$45,000.00");
-    await page.waitForTimeout(1500);
+  
 });
