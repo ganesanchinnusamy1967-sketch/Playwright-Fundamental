@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","60023","verify the tta test","chromium","2026-05-11","broken","2026-05-11","","project_05.spec.ts","",""
+"Verify that the login is page works","83708","Verify that the login works","chromium","2026-05-09","passed","2026-05-09","","05_Allure_reporting\Login.spec.ts","",""
+"Verify that the login is page works","60022","Verify that the login works","chromium","2026-05-11","broken","2026-05-11","","230_Login.spec.ts","",""

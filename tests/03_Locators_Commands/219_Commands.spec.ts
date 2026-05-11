@@ -1,6 +1,6 @@
 import { test , expect }from '@playwright/test';
 test('Verify the commit test',async({page})=>{
-    await page.goto("https://app.vwo.com" , { waitUntil:"commit"});
+    await page.goto("https://app.vwo.com" , { waitUntil:"ommit"});
     console.log("Commit:Server responded");
     // Wait for HTML to be parsed
     await page.goto("https://app.vwo.com" , { waitUntil: "domcontentloaded"});

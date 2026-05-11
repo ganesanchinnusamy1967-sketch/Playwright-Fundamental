@@ -22,14 +22,25 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [["html"],["allure-playwright"],["./CustomTTAReporter.ts"]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  timeout: 240000,
   use: {
+    headless: true,
+    viewport: { width: 1920, height: 1080 },
+    actionTimeout: 60000,
+    navigationTimeout: 60000,
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+    /* Enable video recording for all tests */
+    video: 'on',
+
+    /* Enable screenshots for all tests */
+    screenshot: 'on',
   },
 
   /* Configure projects for major browsers */

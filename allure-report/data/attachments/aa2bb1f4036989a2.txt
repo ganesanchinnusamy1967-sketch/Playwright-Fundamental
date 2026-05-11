@@ -1,0 +1,2 @@
+Current title after click: Login - VWO
+Current title: Login - VWO
