@@ -15,4 +15,4 @@ test('Verify nested iframes' , async({page})=>{
     console.log(await frame3.locator("h4").innerText());
 
     await page.waitForTimeout(1500);
-})
+});
